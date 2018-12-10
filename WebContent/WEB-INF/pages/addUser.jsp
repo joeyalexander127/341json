@@ -3,33 +3,40 @@
 
 <body>
 
-	<h2>Add New User</h2>
 	<h2>User Information</h2>
 	
+	<form:form class ="form-horizontal" method = "POST" modelAttribute="user" action="adduser">
 	
-	<div id="message" onclick="clickThis(this)">There is texxt in ehre</div>
-	<form:form method="POST" modelAttribute="user" action="adduser">
-		<table>
-			<tr>
-				<td><form:label path="firstName">First Name:</form:label></td>
-				<td><form:input path="firstName" /><form:errors path="firstName"/></td>
-			</tr>
-			<tr>
-				<td><form:label path="lastName">Last Name:</form:label></td>
-				<td><form:input path="lastName" /><form:errors path="lastName"/></td>
-			</tr>
-			<tr>
-				<td><form:label path="gender">Gender:</form:label></td>
-				<td><form:radiobutton path="gender" value="0" label="Female"/><form:radiobutton path="gender" value="1" label="Male"/><form:errors path="gender"/> 
-			</tr>
-			<tr> 
-				<td colspan="2">
-					<input type="submit" value="Submit"/>
-				</td>
-			</tr>
-		</table>
-		<br/>
-		<form:errors path="*"/>
+		<div class="form-group">
+		
+	        <form:label path="firstName" class="control-label col-xs-2">First Name:</form:label>
+	        <div class="col-xs-9">
+	            <form:input path="firstName" class="form-control"/><form:errors path="firstName"/>
+	        </div>
+	    </div>  
+	    <div class="form-group">
+	    
+	        <form:label path="lastName" class="control-label col-xs-2">Last Name:</form:label>
+	        <div class="col-xs-9">
+	            <form:input path="lastName" class="form-control"/><form:errors path="lastName"/>
+	        </div>
+	    </div>  
+	        
+	    <div class="form-group">
+	    
+	   		<form:label path="gender" class="control-label col-xs-2">Gender:</form:label>
+	   		<div class="col-xs-8">
+	   			<label class="radio-inline"><form:radiobutton path="gender" value="0" label="Female"/></label>
+	   			<label class="radio-inline"><form:radiobutton path="gender" value="1" label="Male"/></label>
+	   		</div>
+	    	
+	    </div>
+	        
+	    <div class="form-group">
+	        <input type= "submit" value= "submit" class="btn btn-primary"/>
+	 	</div>
+	         
+	    <form:errors path="*"/>
 	</form:form>
 
 </body>

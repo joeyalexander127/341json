@@ -4,22 +4,28 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>CST-341 In-Class Activity</title>	
+	
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	
+	<style type="text/css">.bs-example { margin: 20px; }</style>
+	
+	<link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css">
+	<link rel="stylesheet" href="https://cdn.datatables.net/responsive/2.2.0/css/responsive.dataTables.css">
+    <script type="text/javascript"  src=" https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+	<script src="//cdn.datatables.net/responsive/2.2.0/js/dataTables.responsive.js"></script>
+	
+	<link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon">
+	
 	<spring:url value="/resources/layouts.css" var="layoutsCSS" />
 	<spring:url value="/resources/styles.css" var="stylesCSS" />
 	<spring:url value="/resources/layouts.js" var="layoutsJS" />
-	
-	<script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-    <script type="text/javascript"  src=" https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
-	<link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css">
-	
-	<!-- <script src="https://code.jQuery.com/jQuery-3.3.1.min.js"></script>
-		
-	<link rel="stylesheet" href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css">
-	
-	<script src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
-	 -->
-	<link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon">
-	
 	
 	<link href="${layoutsCSS}" rel="stylesheet" type="text/css" media="all"/>
 	<link href="${stylesCSS}" rel="stylesheet" type="text/css" media="all"/>

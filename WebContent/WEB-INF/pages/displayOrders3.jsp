@@ -3,7 +3,7 @@
 	
 <script>
 
-
+		
 		function getOrders() {
 		    // Makes an AJAX call to the ORders via a REST Service
 		    $.ajax({
@@ -13,6 +13,7 @@
 		        success: function(data) {
 		        	
 		            $('#orders').dataTable({
+		            	responsive: true, // For Column Priority. Lookup Jquery Datatable Column Priority
 		            	data : data,
 		                columns : [{
 		                        data : "orderNo",
@@ -50,5 +51,37 @@
 		<thead style="background-color: #A0A0A0">
 			
 		</thead>
+	</table>
+	
+	<br><br>
+	<table class="table table-responsive" >
+    		<thead>
+        		<tr>
+            		<th>Row</th>
+                	<th>First Name</th>
+                	<th>Last Name</th>
+                	<th>Biography</th>
+            </tr>
+    		</thead>
+        <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Mark</td>
+                    <td>Reha</td>
+                    <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor, varius quam at, luctus dui.</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Mark</td>
+                    <td>Reha</td>
+                    <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor, varius quam at, luctus dui.</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Mark</td>
+                    <td>Reha</td>
+                    <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor, varius quam at, luctus dui.</td>
+                </tr>
+       	</tbody>
 	</table>
 </body>

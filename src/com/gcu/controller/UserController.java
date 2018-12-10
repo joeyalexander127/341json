@@ -55,7 +55,8 @@ public class UserController {
 //		users.add(user);
 //		users.add(new User("Justine", "Reha", 1));
 //		return new ModelAndView("displayUsers", "users", orders);
-		return new ModelAndView("displayOrders", "orders", orders);
+//		return new ModelAndView("displayOrders", "orders", orders);
+		return new ModelAndView("displayOrders3");
 
 	}
 	
